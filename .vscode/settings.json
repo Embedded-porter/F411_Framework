@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "spi.h": "c",
+        "dma.h": "c",
+        "bsp_gpio.h": "c",
+        "bsp_adc.h": "c"
+    }
+}

@@ -1,0 +1,376 @@
+{
+  "name": "UART",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "CORE",
+        "files": [
+          {
+            "path": "../CORE/cmsis_armcc.h"
+          },
+          {
+            "path": "../CORE/core_cm4.h"
+          },
+          {
+            "path": "../CORE/core_cmFunc.h"
+          },
+          {
+            "path": "../CORE/core_cmInstr.h"
+          },
+          {
+            "path": "../CORE/core_cmSimd.h"
+          },
+          {
+            "path": "../CORE/startup_stm32f411xe.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "HALLIB",
+        "files": [
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c"
+          },
+          {
+            "path": "../HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "HARDWARE",
+        "files": [
+          {
+            "path": "../HARDWARE/BSP_24CXX/bsp_24cxx.c"
+          },
+          {
+            "path": "../HARDWARE/BSP_ADC/bsp_adc.c"
+          },
+          {
+            "path": "../HARDWARE/BSP_BEEP/bsp_beep.c"
+          },
+          {
+            "path": "../HARDWARE/BSP_GPIO/bsp_gpio.c"
+          },
+          {
+            "path": "../HARDWARE/BSP_IIC/bsp_myiic.c"
+          },
+          {
+            "path": "../HARDWARE/BSP_IWDG/bsp_iwdg.c"
+          },
+          {
+            "path": "../HARDWARE/BSP_KEY/bsp_button.c"
+          },
+          {
+            "path": "../HARDWARE/BSP_KEY/bsp_key.c"
+          },
+          {
+            "path": "../HARDWARE/BSP_MASTER_I2C/bsp_master_i2c.c"
+          },
+          {
+            "path": "../HARDWARE/BSP_SPI/bsp_spi.c"
+          },
+          {
+            "path": "../HARDWARE/BSP_Timer/bsp_timer.c"
+          },
+          {
+            "path": "../HARDWARE/BSP_W25QXX/bsp_spi_flash.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "README",
+        "files": [],
+        "folders": []
+      },
+      {
+        "name": "SYSTEM",
+        "files": [
+          {
+            "path": "../SYSTEM/delay/delay.c"
+          },
+          {
+            "path": "../SYSTEM/sys/sys.c"
+          },
+          {
+            "path": "../SYSTEM/usart/usart.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "USER",
+        "files": [
+          {
+            "path": "../HARDWARE/bsp_config.h"
+          },
+          {
+            "path": "main.c"
+          },
+          {
+            "path": "stm32f4xx_hal_msp.c"
+          },
+          {
+            "path": "stm32f4xx_it.c"
+          },
+          {
+            "path": "system_stm32f4xx.c"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": "STM32F411RCTx",
+  "packDir": ".pack/Keil/STM32F4xx_DFP.2.14.0",
+  "miscInfo": {
+    "uid": "6240f2c47ec0abb59561842dce9d8f4e"
+  },
+  "targets": {
+    "Target 1": {
+      "excludeList": [],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x20000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x40000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "OpenOCD",
+      "uploadConfig": {
+        "bin": "",
+        "target": "stm32f4x",
+        "interface": "cmsis-dap",
+        "baseAddr": "0x08000000"
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "ST",
+            "cpuName": "STM32F411RC"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        },
+        "STLink": {
+          "bin": "",
+          "proType": "SWD",
+          "resetMode": "default",
+          "runAfterProgram": true,
+          "speed": 4000,
+          "address": "0x8000000",
+          "elFile": "None",
+          "optionBytes": ".eide/target 1.st.option.bytes.ini",
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../SYSTEM/delay",
+          "../SYSTEM/sys",
+          "../SYSTEM/usart",
+          ".",
+          "../CORE",
+          "../HALLIB/STM32F4xx_HAL_Driver/Inc",
+          "../HALLIB/STM32F4xx_HAL_Driver/Inc/Legacy",
+          "../HARDWARE/BSP_24CXX",
+          "../HARDWARE/BSP_ADC",
+          "../HARDWARE/BSP_BEEP",
+          "../HARDWARE/BSP_FLASH",
+          "../HARDWARE/BSP_IIC",
+          "../HARDWARE/BSP_KEY",
+          "../HARDWARE/BSP_MASTER_I2C",
+          "../HARDWARE/BSP_SPI",
+          "../HARDWARE/BSP_Timer",
+          "../HARDWARE/BSP_GPIO",
+          "../HARDWARE/BSP_IWDG",
+          "../HARDWARE",
+          "RTE/_Target 1",
+          ".eide/deps"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32F411xE"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
