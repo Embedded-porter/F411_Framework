@@ -21,7 +21,7 @@ static uint8_t Read_Button2_GPIO(void)
 
 static uint8_t Read_Button3_GPIO(void)
 {
-	return !GPIO_R(KEY3);
+	return GPIO_R(KEY3);
 }
 static uint8_t Read_Button4_GPIO(void)
 {

@@ -77,3 +77,5 @@
 ..\obj\main.o: ..\HARDWARE\BSP_KEY\bsp_key.h
 ..\obj\main.o: ..\HARDWARE\BSP_IWDG\bsp_iwdg.h
 ..\obj\main.o: ..\HARDWARE\BSP_BEEP\bsp_beep.h
+..\obj\main.o: ..\HARDWARE\bsp_command.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\include\string.h

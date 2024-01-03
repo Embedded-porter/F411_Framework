@@ -189,7 +189,7 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -339,7 +339,7 @@
               <MiscControls>--C99   --diag_suppress=550,177,1035,186,69,223,167,1</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F411xE</Define>
               <Undefine></Undefine>
-              <IncludePath>..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\CORE;..\HALLIB\STM32F4xx_HAL_Driver\Inc;..\HALLIB\STM32F4xx_HAL_Driver\Inc\Legacy;..\HARDWARE\BSP_24CXX;..\HARDWARE\BSP_ADC;..\HARDWARE\BSP_BEEP;..\HARDWARE\BSP_FLASH;..\HARDWARE\BSP_IIC;..\HARDWARE\BSP_KEY;..\HARDWARE\BSP_MASTER_I2C;..\HARDWARE\BSP_SPI;..\HARDWARE\BSP_Timer;..\HARDWARE\BSP_GPIO;..\HARDWARE\BSP_IWDG;..\HARDWARE</IncludePath>
+              <IncludePath>..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\CORE;..\HALLIB\STM32F4xx_HAL_Driver\Inc;..\HALLIB\STM32F4xx_HAL_Driver\Inc\Legacy;..\HARDWARE\BSP_24CXX;..\HARDWARE\BSP_ADC;..\HARDWARE\BSP_BEEP;..\HARDWARE\BSP_FLASH;..\HARDWARE\BSP_IIC;..\HARDWARE\BSP_KEY;..\HARDWARE\BSP_MASTER_I2C;..\HARDWARE\BSP_SPI;..\HARDWARE\BSP_Timer;..\HARDWARE\BSP_GPIO;..\HARDWARE\BSP_IWDG;..\HARDWARE;..\HARDWARE\BSP_UART_FIFO</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -387,6 +387,11 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_command.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\bsp_command.c</FilePath>
             </File>
             <File>
               <FileName>bsp_config.h</FileName>
@@ -486,7 +491,7 @@
             <File>
               <FileName>usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\SYSTEM\usart\usart.c</FilePath>
+              <FilePath>E:\Project\OLP\Project-V1.2\SYSTEM\usart\usart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -627,16 +632,6 @@
               <FileName>stm32f4xx_hal_iwdg.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HALLIB\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_iwdg.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>README</GroupName>
-          <Files>
-            <File>
-              <FileName>README.TXT</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\README.TXT</FilePath>
             </File>
           </Files>
         </Group>

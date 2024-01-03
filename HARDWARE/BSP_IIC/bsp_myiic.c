@@ -4,19 +4,19 @@
 //IIC初始化
 void IIC_Init(void)
 {
-	GPIO_InitTypeDef GPIO_Initure;
-	
-	__HAL_RCC_GPIOB_CLK_ENABLE();   //使能GPIOB时钟
-	
-	//PB8,9初始化设置
-	GPIO_Initure.Pin=GPIO_PIN_8|GPIO_PIN_9;
-	GPIO_Initure.Mode=GPIO_MODE_OUTPUT_PP;  //推挽输出
-	GPIO_Initure.Pull=GPIO_PULLUP;          //上拉
-	GPIO_Initure.Speed=GPIO_SPEED_HIGH;     //高速
-	HAL_GPIO_Init(GPIOB,&GPIO_Initure);
-	
-	IIC_SDA=1;
-	IIC_SCL=1;  
+    GPIO_InitTypeDef GPIO_Initure;
+    
+    __HAL_RCC_GPIOB_CLK_ENABLE();   //使能GPIOB时钟
+    
+    //PB6,7初始化设置
+    GPIO_Initure.Pin=GPIO_PIN_8|GPIO_PIN_9;
+    GPIO_Initure.Mode=GPIO_MODE_OUTPUT_PP;  //推挽输出
+    GPIO_Initure.Pull=GPIO_PULLUP;          //上拉
+    GPIO_Initure.Speed=GPIO_SPEED_HIGH;     //高速
+    HAL_GPIO_Init(GPIOB,&GPIO_Initure);
+    
+    IIC_SDA=1;
+    IIC_SCL=1;  
 }
 
 //产生IIC起始信号
@@ -142,3 +142,20 @@ unsigned char IIC_Read_One_Byte(void)
 	return receive;
 }
 
+/*
+*函数名：i2c_CheckDevice
+*功能说明：检测I2C总线设备，CPU向发送设备地址，然后读取设备应答来判断该设备是否存在
+*形参：_Address
+*返回值：返回值0表示正确，返回1表示未检测到设备
+*/
+uint8_t i2c_CheckDevice(uint32_t _Address )
+{
+    uint8_t ucAck;
+  	IIC_Init();    //配置GPIO
+    IIC_Start();       //发送启动信号
+    /*发送设备地址+读写控制位*/
+    IIC_Send_Byte(_Address);
+    ucAck = IIC_Wait_Ack();    //检测设备的ACK应答
+    IIC_Stop();    //发送停止信号
+    return ucAck;
+}

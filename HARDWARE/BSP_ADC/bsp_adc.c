@@ -150,7 +150,7 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef *hadc)
     PC1     ------> ADC1_IN11
     PC2     ------> ADC1_IN12
     PC3     ------> ADC1_IN13
-    PA0-WKUP     ------> ADC1_IN0
+    PA0-WKUP------> ADC1_IN0
     PA1     ------> ADC1_IN1
     PA2     ------> ADC1_IN2
     PA3     ------> ADC1_IN3

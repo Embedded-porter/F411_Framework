@@ -1,4 +1,5 @@
 #include "bsp_iwdg.h"
+#include "bsp_config.h"
 
 HAL_StatusTypeDef HAL_IWDG_Start(IWDG_HandleTypeDef *hiwdg)
 {
@@ -22,7 +23,7 @@ void bsp_IwdgInit(u8 prer,u16 rlr)
     IWDG_Handler.Init.Reload=rlr;		//重装载值
     HAL_IWDG_Init(&IWDG_Handler);		//初始化IWDG,默认会开启独立看门狗	
 
-	HAL_IWDG_Start(&IWDG_Handler);		//启动独立看门狗
+	  HAL_IWDG_Start(&IWDG_Handler);		//启动独立看门狗
 }
    
 //喂独立看门狗

@@ -134,29 +134,21 @@
           },
           {
             "path": "../HARDWARE/BSP_Timer/bsp_timer.c"
-          },
-          {
-            "path": "../HARDWARE/BSP_W25QXX/bsp_spi_flash.c"
           }
         ],
-        "folders": []
-      },
-      {
-        "name": "README",
-        "files": [],
         "folders": []
       },
       {
         "name": "SYSTEM",
         "files": [
           {
+            "path": "../../Project-V1.2/SYSTEM/usart/usart.c"
+          },
+          {
             "path": "../SYSTEM/delay/delay.c"
           },
           {
             "path": "../SYSTEM/sys/sys.c"
-          },
-          {
-            "path": "../SYSTEM/usart/usart.c"
           }
         ],
         "folders": []
@@ -164,6 +156,9 @@
       {
         "name": "USER",
         "files": [
+          {
+            "path": "../HARDWARE/bsp_command.c"
+          },
           {
             "path": "../HARDWARE/bsp_config.h"
           },
@@ -360,8 +355,8 @@
           "../HARDWARE/BSP_GPIO",
           "../HARDWARE/BSP_IWDG",
           "../HARDWARE",
-          "RTE/_Target 1",
-          ".eide/deps"
+          "../HARDWARE/BSP_UART_FIFO",
+          "RTE/_Target 1"
         ],
         "libList": [],
         "sourceDirList": [],

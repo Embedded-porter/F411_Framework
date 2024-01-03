@@ -11,7 +11,6 @@
 #define IIC_SDA    PBout(9) //SDA	 
 #define READ_SDA   PBin(9)  //输入SDA
 
-
 //IIC所有操作函数
 void IIC_Init(void);                //初始化IIC的IO口				 
 void IIC_Start(void);				//发送IIC开始信号
@@ -21,6 +20,7 @@ unsigned char IIC_Read_Byte(unsigned char ack);//IIC读取一个字节
 unsigned char IIC_Wait_Ack(void); 				//IIC等待ACK信号
 void IIC_Ack(void);					//IIC发送ACK信号
 void IIC_NAck(void);				//IIC不发送ACK信号
+uint8_t i2c_CheckDevice(uint32_t _Address); //检测I2C设备是否存在
 
 void IIC_Write_One_Byte(unsigned char daddr,unsigned char addr,unsigned char data);
 unsigned char IIC_Read_One_Byte(void);
